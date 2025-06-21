@@ -2301,6 +2301,18 @@ $prefix = 'iro_options';
         'desc'   => __('Enable to show bronze/silver/gold medal badges for blog milestones, Requires you to unlock the relevant milestone to replace the relevant capsule', 'sakurairo_csf'),
         'default' => true,
       ),
+
+      array(
+        'id' => 'game_record',
+        'type' => 'select',
+        'title' => __('Game Record', 'sakurairo_csf'),
+        'desc' => __('Select the game platform to display.', 'sakurairo_csf'),
+        'chosen' => true,
+        'multiple' => true,
+        'options' => array(
+            'Steam' => __('Steam', 'sakurairo_csf'),
+        ),
+      ),
       
       array(
         'id'     => 'stat_announcement_text',
